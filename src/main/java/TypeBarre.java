@@ -69,7 +69,7 @@ public class TypeBarre {
     
     public String toStringTypeBarre(){
         String res = "Type Barre {\n";
-        res = "cout : "+this.cout+"\n"+"lmin : "+this.lmin+"\n"+"lmax : "+this.lmax+"\n"+"tmax : "+this.tmax+"\n"+"cmax : "+this.cmax;
+        res = res+ "cout : "+this.cout+"\n"+"lmin : "+this.lmin+"\n"+"lmax : "+this.lmax+"\n"+"tmax : "+this.tmax+"\n"+"cmax : "+this.cmax+"}";
         return res;
     }
     

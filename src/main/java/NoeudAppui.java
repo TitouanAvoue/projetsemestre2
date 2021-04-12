@@ -11,6 +11,7 @@
 public abstract class NoeudAppui extends Noeud {
     
     private double alpha;
+    private 
     
     public NoeudAppui(double alpha, int id){
         super(id);

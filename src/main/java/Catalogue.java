@@ -13,10 +13,10 @@ import java.util.List;
  * @author titou
  */
 public class Catalogue {
-    private List<TypeBarre> contient;
+    private List<TypeBarre> typeBarre;
     
     public Catalogue(){
-        this.contient = new ArrayList<TypeBarre>();
+        this.typeBarre = new ArrayList<TypeBarre>();
     }
     
     
@@ -33,6 +33,6 @@ public class Catalogue {
      * @return the contient
      */
     public List<TypeBarre> getContient() {
-        return contient;
+        return typeBarre;
     }
 }

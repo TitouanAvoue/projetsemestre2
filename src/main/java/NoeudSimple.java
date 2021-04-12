@@ -23,7 +23,7 @@ public class NoeudSimple extends Noeud {
     /**
      * @return the abs
      */
-    public double getAbs() {
+    public double getPx() {
         return abs;
     }
 
@@ -37,7 +37,7 @@ public class NoeudSimple extends Noeud {
     /**
      * @return the ord
      */
-    public double getOrd() {
+    public double getPy() {
         return ord;
     }
 
@@ -49,8 +49,19 @@ public class NoeudSimple extends Noeud {
     }
     
     public String toStringNoeud(){
-        String res = "identifiant : "+this.getId()+"\n"+"("+this.abs+","+this.ord+")";
+        String res = "";
+        res =  "identifiant : "+this.getId()+"\n"+"("+this.abs+","+this.ord+")";
         return res;
+    }
+    public void testaff(){
+        System.out.println(this.toStringNoeud());
+    }
+    
+   
+    
+    public static void main(String[] args) {
+         NoeudSimple noeud1 = new NoeudSimple(5, 5, 1);
+         noeud1.testaff();
     }
     
 }

@@ -42,9 +42,11 @@ public class Point {
         this.py = py;
     }
 
-    @Override
-    public String toString() {
-        return "(" + px + "," + py + ')';
+    
+    public String toStringPoint() {
+        String res;
+        res = "(" + px + "," + py + ")";
+        return res;
     }
     public static Point demandePoint() {
         System.out.println("abscisse : ");
@@ -52,6 +54,10 @@ public class Point {
         System.out.println("ordonnée : ");
         double py = Lire.d();
         return new Point(px, py);
+    }
+    
+    public static void main(String[] args) {
+      demandePoint();
     }
     
     

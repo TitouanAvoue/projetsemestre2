@@ -18,6 +18,7 @@ public class TypeBarre {
     
     
     public TypeBarre(int id, double cout, double lmin, double lmax, double tmax, double cmax){
+        this.id = id;
         this.cout = cout;
         this.lmin = lmin;
         this.lmax = lmax;

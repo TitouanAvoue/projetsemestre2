@@ -1,3 +1,7 @@
+
+import java.util.ArrayList;
+import java.util.List;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -50,12 +54,16 @@ public class NoeudSimple extends Noeud {
     
     public String toStringNoeud(){
         String res = "";
-        res =  "identifiant : "+this.getId()+"\n"+"("+this.abs+","+this.ord+")";
+        res =  "identifiant : "+this.getId()+" , "+"("+this.abs+","+this.ord+")";
         return res;
     }
     public void testaff(){
         System.out.println(this.toStringNoeud());
     }
+    
+
+    
+
     
    
     

@@ -15,24 +15,29 @@ import java.util.List;
 public class Catalogue {
     private List<TypeBarre> typeBarre;
     
+    public Catalogue(List<TypeBarre> typeBarre){
+        this.typeBarre = typeBarre;
+    }
+    
     public Catalogue(){
         this.typeBarre = new ArrayList<TypeBarre>();
     }
     
-    
+ 
     
     public String toStringCatalogue(){
-        String res = "Catalogue {\n";
-        for(int i = 0; i < this.getContient().size(); i++){
-            res = res + this.getContient().get(i).toStringTypeBarre();
+        String res = "Catalogue {";
+        for(int i = 0; i < this.getTypeBarre().size(); i++){
+            res = res +"\n"+ this.getTypeBarre().get(i).toStringTypeBarre();
         }
         return res +"}";
     }
 
     /**
-     * @return the contient
+     * @return the typeBarre
      */
-    public List<TypeBarre> getContient() {
+    public List<TypeBarre> getTypeBarre() {
         return typeBarre;
     }
+    
 }

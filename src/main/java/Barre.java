@@ -21,6 +21,11 @@ public class Barre {
         this.fin = fin;
         this.typeBarre = typeBarre;
     }
+    public Barre(int id, Noeud debut, Noeud fin) {
+        this.id = id;
+        this.debut = debut;
+        this.fin = fin;
+    }
 
     /**
      * @return the id
@@ -44,11 +49,11 @@ public class Barre {
     }
 
     public String toStringBarre() {
-        String res = "identifiant : " + this.id + "\n noeud debut \n " + this.debut.toStringNoeud() + "\n noeud fin \n" + this.fin.toStringNoeud() + " \n" + this.typeBarre.toStringTypeBarre();
+        String res = "identifiant : " + this.id + " , noeud debut : " + this.debut.toStringNoeud() + " ,  noeud fin : " + this.fin.toStringNoeud() + " " + this.typeBarre.toStringTypeBarre();
         return res;
     }
     
-    public double longueurBarre(){
+    /*public double longueurBarre(){
         double x1 = this.debut.getPx();
         double x2 = this.fin.getPx();
         double y1 = this.debut.getPx();
@@ -56,14 +61,14 @@ public class Barre {
         double res = Math.sqrt((x1-x2)*(x1-x2) + (y1-y2)*(y1-y2));
         return res;
         
-    }
+    }*/
     
     public void testaffichebarre(){
         System.out.println(this.toStringBarre());
     }
-    public void testaffichelongueur(){
+    /*public void testaffichelongueur(){
         System.out.println(this.longueurBarre());
-    }
+    }*/
 
     public static void main(String[] args) {
         NoeudSimple noeud1 = new NoeudSimple(5.0, 5.0, 1);
@@ -71,7 +76,9 @@ public class Barre {
         TypeBarre acier = new TypeBarre(2, 5,4,6,78,89);
         Barre barre1 = new Barre(1,noeud1, noeud2, acier);
         barre1.testaffichebarre();
-        barre1.testaffichelongueur();
+        //barre1.testaffichelongueur();
 
     }
+    
+    
 }

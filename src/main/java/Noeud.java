@@ -32,9 +32,9 @@ public abstract class Noeud {
     
     public abstract String toStringNoeud();
     
-    public abstract double getPx();
+    //public abstract double getPx();
     
-    public abstract double getPy();
+    //public abstract double getPy();
     
     
 }

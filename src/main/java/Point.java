@@ -17,6 +17,11 @@ public class Point {
         this.px = px;
         this.py = py;
     }
+    
+    public Point(){
+        this.px = 0;
+        this.py = 0;
+    }
     public double getPx() {
         return px;
     }

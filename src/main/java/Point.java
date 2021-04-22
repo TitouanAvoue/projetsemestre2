@@ -12,16 +12,22 @@
 public class Point {
     private double px;
     private double py;
-    
-    public Point(double px, double py){
+    private int num;
+
+    public Point(double px, double py, int num) {
+        this.px = px;
+        this.py = py;
+        this.num = num;
+    }
+
+    public Point(double px, double py) {
         this.px = px;
         this.py = py;
     }
+public Point(){
     
-    public Point(){
-        this.px = 0;
-        this.py = 0;
-    }
+}
+
     public double getPx() {
         return px;
     }
@@ -47,23 +53,42 @@ public class Point {
         this.py = py;
     }
 
-    
     public String toStringPoint() {
         String res;
-        res = "(" + px + "," + py + ")";
+        res = "(" + px + "," + py + ")"+" num : "+num;
         return res;
     }
-    public static Point demandePoint() {
-        System.out.println("abscisse : ");
-        double px = Lire.d();
-        System.out.println("ordonnée : ");
-        double py = Lire.d();
-        return new Point(px, py);
+
+    /**
+     * @return the num
+     */
+    public int getNum() {
+        return num;
     }
-    
-    public static void main(String[] args) {
-      demandePoint();
+
+    /**
+     * @param num the num to set
+     */
+    public void setNum(int num) {
+        this.num = num;
     }
-    
+  public Point demandePoint() {
+        System.out.println("abcisse : ");
+        double x = Lire.d();
+        System.out.println("ordonné : ");
+        double y = Lire.d();
+        System.out.println("Numéro du point (0 ou 1 ou 2)");
+        int num = Lire.i();
+        Point res = new Point(x, y, num);// à modifier attention identifiant
+        return res;
+    }
+  public Point demandePointTriangleTerrainDejaExistant() {
+        System.out.println("abcisse : ");
+        double x = Lire.d();
+        System.out.println("ordonné : ");
+        double y = Lire.d();
+        Point res = new Point(x, y, 0);// à modifier attention identifiant
+        return res;
+    }
     
 }

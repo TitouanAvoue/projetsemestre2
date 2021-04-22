@@ -14,7 +14,7 @@ import java.util.List;
 public class Terrain {
 
 
-    private double Xmin;
+     private double Xmin;
     private double Xmax;
     private double Ymin;
     private double Ymax;
@@ -39,8 +39,11 @@ public class Terrain {
     public String toStringTerrain(){
         String res;
         res = "";
-        res = "["+this.getXmin()+","+this.getYmin()+"]"+" "+"["+this.getXmax()+","+this.getYmax()+"]";
-        
+        res = "["+this.getXmin()+","+this.getYmin()+"]"+" "+"["+this.getXmax()+","+this.getYmax()+"]"+"\n Liste des triangles terrain : \n";
+        for (int i = 0; i < this.getListTriangleTerrain().size(); i++) {
+            res = res + this.getListTriangleTerrain().get(i).toStringTriangleTerrain() + "\n";
+        }
+      
         return res;
     }
 

@@ -11,10 +11,14 @@
 public class NoeudAppuiDouble extends NoeudAppui {
     
     
-    public NoeudAppuiDouble(int id, double alpha,TriangleTerrain triangleterrain, int premierptsegterr){
+   public NoeudAppuiDouble(int id, double alpha,TriangleTerrain triangleterrain, int premierptsegterr){
         super(id,alpha,triangleterrain,premierptsegterr);
         
        
+    }
+    
+    public NoeudAppuiDouble(){
+        super();
     }
     
     
@@ -22,5 +26,4 @@ public class NoeudAppuiDouble extends NoeudAppui {
         String res = "identificateur : "+this.getId()+", alpha : "+this.getAlpha()+", triangle terrain : "+"premier point du segment de terrain : "+this.getPremierptsegterr();
         return res;
     }
-    
 }

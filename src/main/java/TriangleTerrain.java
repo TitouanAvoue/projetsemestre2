@@ -163,5 +163,4 @@ public class TriangleTerrain {
     public void setPoint2(Point point2) {
         this.point2 = point2;
     }
-
 }

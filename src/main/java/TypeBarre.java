@@ -9,7 +9,7 @@
  * @author titou
  */
 public class TypeBarre {
-    private int id;
+   private int id;
     private double cout;
     private double lmin;
     private double lmax;
@@ -25,6 +25,16 @@ public class TypeBarre {
         this.tmax = tmax;
         this.cmax = cmax;
     }
+    
+     public TypeBarre(){
+        this.id = 0;
+        this.cout = 0;
+        this.lmin = 0;
+        this.lmax = 0;
+        this.tmax = 0;
+        this.cmax = 0;
+    }
+    
 
     /**
      * @return the id
@@ -73,7 +83,6 @@ public class TypeBarre {
         res = res+ "cout : "+this.cout+"\n"+"lmin : "+this.lmin+"\n"+"lmax : "+this.lmax+"\n"+"tmax : "+this.tmax+"\n"+"cmax : "+this.cmax+"}";
         return res;
     }
-    
     
     
 }

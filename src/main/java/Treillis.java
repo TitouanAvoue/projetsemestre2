@@ -944,7 +944,7 @@ public class Treillis {
         //NoeudSimple noeud2 = new NoeudSimple(6, 6, 2);
         //Barre b = new Barre(2,noeud1,noeud2);
         //System.out.println(longueurBarre(b));
-        
+        System.out.println("ggg");
 
         
     }

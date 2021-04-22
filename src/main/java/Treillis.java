@@ -456,6 +456,7 @@ public class Treillis {
         //t1.treillisTest().choisiNoeud();
         //t1.treillisTest().choisiTypeBarre();
         t1.treillisTest().creationNoeudAppuiDouble();
+        System.out.println("hello world");
     }
 
 }
